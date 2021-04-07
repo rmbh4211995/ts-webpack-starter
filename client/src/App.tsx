@@ -1,8 +1,6 @@
 import React from 'react'
-import Homepage from './pages/Homepage'
+import ContactForm from './components/ContactForm'
 
-const App = () => {
-  return <Homepage name='Home' depth={1} />
-}
+const App = () => <ContactForm />
 
 export default App
