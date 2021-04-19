@@ -11,11 +11,13 @@
     {
       "path": "client/src/components/Dropdown.tsx",
       "zeplinIds": [
-        "607ce0849cb8b189e60cf2a4"
+        "607ce0849cb8b189e60cf2a4",
+        "607ce51727956f8aa9739049"
       ]
     }
   ],
   "github": {
-    "repository": "rmbh4211995/ts-webpack-starter"
+    "repository": "rmbh4211995/ts-webpack-starter",
+    "branch": "zeplin-demo"
   }
 }
