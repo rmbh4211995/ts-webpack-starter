@@ -1,24 +1,21 @@
 import React from 'react'
-import { Dropdown, Field, Menu, Item, Select, Label } from '@zendeskgarden/react-dropdowns'
+import { Dropdown as ZDDropdown, Field, Menu, Item, Select, Label } from '@zendeskgarden/react-dropdowns'
 
-interface DropdownItem {
+export interface DropdownItem {
   label: string
   value: string
 }
 
-const Example = ({
-  selectedItem,
-  onSelect,
-  downshiftProps,
-  items,
-}: {
+export interface DropdownProps {
   selectedItem: DropdownItem
   onSelect: (item: string) => void
-  downshiftProps: Record<string, unknown>
+  downshiftProps?: Record<string, unknown>
   items: DropdownItem[]
-}) => {
+}
+
+export const Dropdown = ({ selectedItem, onSelect, downshiftProps, items }: DropdownProps) => {
   return (
-    <Dropdown selectedItem={selectedItem} onSelect={onSelect} downshiftProps={downshiftProps}>
+    <ZDDropdown selectedItem={selectedItem} onSelect={onSelect} downshiftProps={downshiftProps}>
       <Field>
         <Label>Houseplant</Label>
         <Select>{selectedItem.label}</Select>
@@ -30,8 +27,8 @@ const Example = ({
           </Item>
         ))}
       </Menu>
-    </Dropdown>
+    </ZDDropdown>
   )
 }
 
-export default Example
+export default Dropdown

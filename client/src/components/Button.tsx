@@ -1,14 +1,21 @@
 import React from 'react'
-import { Button } from '@zendeskgarden/react-buttons'
+import { Button as ZDButton } from '@zendeskgarden/react-buttons'
 import LeafIcon from '@zendeskgarden/svg-icons/src/16/leaf-stroke.svg'
 
-const ExampleButton = () => (
-  <Button>
-    <Button.StartIcon>
+export interface ButtonProps {
+  isPrimary?: boolean
+  isDanger?: boolean
+  disabled?: boolean
+  size?: 'small' | 'medium' | 'large'
+}
+
+export const Button = ({ isPrimary, isDanger, disabled, size }: ButtonProps) => (
+  <ZDButton isPrimary={isPrimary} isDanger={isDanger} disabled={disabled} size={size}>
+    <ZDButton.StartIcon>
       <LeafIcon />
-    </Button.StartIcon>
+    </ZDButton.StartIcon>
     Media
-  </Button>
+  </ZDButton>
 )
 
-export default ExampleButton
+export default Button

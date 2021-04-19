@@ -2,6 +2,13 @@
   "plugins": [
     {
       "name": "@zeplin/cli-connect-react-plugin"
+    },
+    {
+      "name": "@zeplin/cli-connect-storybook-plugin",
+      "config": {
+        "url": "http://localhost:6006",
+        "startScript": "storybook"
+      }
     }
   ],
   "projects": [
@@ -11,8 +18,13 @@
     {
       "path": "client/src/components/Dropdown.tsx",
       "zeplinIds": [
-        "607ce0849cb8b189e60cf2a4",
         "607ce51727956f8aa9739049"
+      ]
+    },
+    {
+      "path": "client/src/components/Button.tsx",
+      "zeplinIds": [
+        "607ce6b5342d788c44896a78"
       ]
     }
   ],

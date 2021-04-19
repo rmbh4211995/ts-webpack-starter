@@ -17,9 +17,9 @@ const presets = [
 ]
 
 const plugins = [
-  '@babel/plugin-proposal-class-properties',
-  '@babel/plugin-transform-runtime',
-  '@babel/plugin-transform-typescript',
+  ['@babel/plugin-proposal-class-properties', { loose: true }],
+  ['@babel/plugin-transform-runtime', { loose: true }],
+  ['@babel/plugin-transform-typescript', { loose: true }],
 ]
 
 module.exports = { presets, plugins }
