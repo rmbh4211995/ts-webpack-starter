@@ -8,7 +8,9 @@
     "start": "nodemon server/index.ts",
     "prisma": "ts-node prisma/index.ts",
     "docker-build": "docker-compose -f docker-compose.dev.yml build",
-    "up": "docker-compose -f docker-compose.dev.yml up"
+    "up": "docker-compose -f docker-compose.dev.yml up",
+    "zeplin-connect": "zeplin connect",
+    "zeplin-connect-dev-mode": "zeplin connect --dev"
   },
   "dependencies": {
     "core-js": "^3.2.1",
@@ -38,6 +40,9 @@
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
+    "@zendeskgarden/react-dropdowns": "^8.36.1",
+    "@zeplin/cli": "^1.1.10",
+    "@zeplin/cli-connect-react-plugin": "^1.1.1",
     "autoprefixer": "^10.1.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",

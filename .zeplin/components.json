@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    {
+      "name": "@zeplin/cli-connect-react-plugin"
+    }
+  ],
+  "projects": [
+    "607c7ede3bea5293227ee2a6"
+  ],
+  "components": [
+    {
+      "path": "client/src/components/Dropdown.tsx",
+      "zeplinIds": [
+        "607ce0849cb8b189e60cf2a4"
+      ]
+    }
+  ],
+  "github": {
+    "repository": "rmbh4211995/ts-webpack-starter"
+  }
+}
