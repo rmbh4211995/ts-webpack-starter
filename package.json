@@ -11,11 +11,13 @@
     "up": "docker-compose -f docker-compose.dev.yml up"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
     "core-js": "^3.2.1",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
@@ -30,7 +32,7 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.6.3",
     "@babel/preset-typescript": "^7.10.4",
-    "@babel/runtime": "^7.6.3",
+    "@babel/runtime": "^7.15.3",
     "@prisma/client": "^2.30.0",
     "@types/express": "^4.17.13",
     "@types/html-webpack-plugin": "^3.2.6",

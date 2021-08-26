@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from './Header'
 import CardList from './CardList'
-import UserList from './UserList'
+import PrismaUserList from './PrismaUserList'
+import ReduxUserList from './ReduxUserList'
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <Header />
       <div className='m-5'>
         <CardList />
-        <UserList />
+        <PrismaUserList />
+        <ReduxUserList />
       </div>
     </>
   )

@@ -84,6 +84,11 @@ View your database with prisma
 npx prisma studio
 ```
 
+## State management with React Redux
+
+[React Redux](https://react-redux.js.org/introduction/getting-started) is a well known library for managing application "state" or data.
+If you are interested in using this library, refer to `client/src/store`
+
 ## Why aren't you using the offical webpack-hot-middleware?
 
 The webpack-hot-middleware package currently has a bug with webpack v5 that causes HMR to stop working.
