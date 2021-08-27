@@ -1,4 +1,4 @@
-import { getUsers } from '../../prisma/index'
+import { getUsers } from '../../prisma/queries'
 
 export const resolvers = {
   Query: {

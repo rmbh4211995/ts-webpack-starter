@@ -13,8 +13,17 @@ npm install
 If you plan to use docker-compose for your dev setup, [install docker for your OS](https://docs.docker.com/get-docker/)
 
 This repo uses `env-cmd` to support cross platform development.
-Make sure you create an environment before running
-`touch .env`
+Make sure you create a `.env` before running
+
+```
+cp .env-sample .env
+```
+
+Setup the sample prisma db
+
+```
+npm run db
+```
 
 ## Dev 💻
 
@@ -58,6 +67,21 @@ To configure add to your `.env`
 
 ```
 DATABASE_URL="your-database-url"
+```
+
+Update your `.schema.prisma`
+
+```
+datasource db {
+  provider = "your-db-here" // postgres, sqlite, mysql, etc
+  ...
+}
+```
+
+Migrate primsa schema -> databse schema
+
+```
+npx primsa migrate dev
 ```
 
 Sync your db schema
