@@ -1,6 +1,6 @@
 # Typescript Webpack Starter
 
-Base template for react projects. Includes webpack, babel, tailwind, prisma, docker dev setup, and github action deployment.
+Base template for react projects. Includes webpack, babel, tailwind, redux, prisma, docker dev setup, and github action deployment.
 
 ## Setup
 
@@ -10,22 +10,23 @@ Install node dependencies
 npm install
 ```
 
-If you plan to use docker-compose for your dev setup, install docker for your OS
-`https://docs.docker.com/get-docker/`
+If you plan to use docker-compose for your dev setup, [install docker for your OS](https://docs.docker.com/get-docker/)
 
-## Dev
+This repo uses `env-cmd` to support cross platform development.
+Make sure you create an environment before running
+`touch .env`
 
-Run with webpack
+## Dev Options
 
-```
-npm run start
-```
+<details>
+  <summary>Run with webpack</summary>
+  <p>```npm run start```</p>
+</details>
 
-or with docker-compose
-
-```
-npm run up
-```
+<details>
+  <summary>Run with docker</summary>
+  <p>```npm run up```</p>
+</details>
 
 ## Deployment with Docker
 
