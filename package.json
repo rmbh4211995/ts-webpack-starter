@@ -12,6 +12,7 @@
     "up": "docker-compose -f docker-compose.dev.yml up"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.9",
     "@reduxjs/toolkit": "^1.6.1",
     "apollo-server": "^3.3.0",
     "apollo-server-express": "^3.3.0",

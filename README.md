@@ -37,31 +37,25 @@ npm run db
   <pre>npm run up</pre>
 </details>
 
-## CD with Github Actions / Docker 🌐
-
-[Github Actions](https://docs.github.com/en/actions/quickstart) are customizable workflows that help you automate processes (like continuous deployment).
-
-The supplied github action uses [docker-compose](https://github.com/docker/compose) to deploy your app to your AWS EC2 Instance.
-
-Go to `Github -> Settings -> Secrets -> Add Repository Secret` and add the following secrets.
-
-```
-AWS_IP=your-ec2-aws-ip-address
-AWS_KNOWN_HOSTS=rsa-encrypted-host-fingerprints
-AWS_SSH_KEY=ssh-key-pair-pem
-AWS_USER=ec2-user-name
-```
-
 ## CSS with Tailwind 📝
 
 [Tailwind](https://tailwindcss.com/docs) is a css framework that prevents you from having to write your own css classes 🤮.
 
 Look at [CardList.tsx](https://github.com/rmbh4211995/ts-webpack-starter/blob/master/client/src/components/CardList.tsx) for an example.
 
-## Database with Prisma 📂
+## API with Graphql
+
+[Graphql](https://graphql.org/) is a query lanage for your API. It uses a very readable syntax to fetch your data.
+[Apollo](https://www.apollographql.com/docs/) is a tooling suite that helps you interact with your graphql server easily.
+
+Look at [GraphqlUserList.tsx](https://github.com/rmbh4211995/ts-webpack-starter/blob/master/client/src/components/GraphqlUserList.tsx) and [server/index.ts](https://github.com/rmbh4211995/ts-webpack-starter/blob/master/server/index.ts) to see how it works.
+
+## Database Access with Prisma 📂
 
 [Prisma](https://www.prisma.io/docs/getting-started) is a newer ORM to help you access your database from Node.js.
 It even generates types for your tables! 😊
+
+Look at [prisma/queries/index.ts](https://github.com/rmbh4211995/ts-webpack-starter/blob/master/prisma/queries/index.ts) and [server/graphql/resolvers.ts](https://github.com/rmbh4211995/ts-webpack-starter/blob/master/sever/graphql/resolvers.ts) to see how it fits together with graphql.
 
 To configure add to your `.env`
 
@@ -106,6 +100,21 @@ npx prisma studio
 
 [React Redux](https://react-redux.js.org/introduction/getting-started) is a well known library for managing application "state" or data.
 If you are interested in using this library, refer to `client/src/store`
+
+## CD with Github Actions / Docker 🌐
+
+[Github Actions](https://docs.github.com/en/actions/quickstart) are customizable workflows that help you automate processes (like continuous deployment).
+
+The supplied github action uses [docker-compose](https://github.com/docker/compose) to deploy your app to your AWS EC2 Instance.
+
+Go to `Github -> Settings -> Secrets -> Add Repository Secret` and add the following secrets.
+
+```
+AWS_IP=your-ec2-aws-ip-address
+AWS_KNOWN_HOSTS=rsa-encrypted-host-fingerprints
+AWS_SSH_KEY=ssh-key-pair-pem
+AWS_USER=ec2-user-name
+```
 
 ## Questions 🙋‍♂️
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import CardList from './CardList'
-import PrismaUserList from './PrismaUserList'
+import GraphqlUserList from './GraphqlUserList'
 import ReduxUserList from './ReduxUserList'
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <div className='m-5'>
         <CardList />
-        <PrismaUserList />
+        <GraphqlUserList />
         <ReduxUserList />
       </div>
     </>
